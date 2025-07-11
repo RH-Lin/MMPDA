@@ -1,0 +1,99 @@
+Start Deception Detection:
+ Parameters settings:
+ Namespace(device=0, gpu=0, lr=0.0003, batchsize=4, step_size=20, gamma=0.5, echo_batches=1, epochs=30, log='logs', finetune=True, train_dataset='BagOfLies', train_root='', train_list='../MMDD_features/BagOfLies/BgOL_features.pkl', test_dataset='BoxOfLies', test_root='', test_list='../MMDD_features/BoxOfLies/BOL_test_features.pkl', fusion='false', fusion_modal='FusionModule', modalities='vaf', v_model='OpenFace_Affect7_MLP_MLP', a_model='ResNet18_audio', f_model='ResNet18_GRU', v_dim=64, a_dim=512, f_dim=256, common_dim=64, kernel_size=3, fusion_type='mult', concat_dim=-1, layer=3, attn_dropout_mult=0.0, embed_dim=64, num_heads=8, layers=4, attn_dropout=0.1, relu_dropout=0.1, res_dropout=0.1, embed_dropout=0.0, attn_mask=True, channel=64, reduction=16)
+Train from scratch!
+epoch:1, mini-batch: 82, lr=0.000300, CE_global= 2.7623 , CE1= 2.7623 , CE2= 2.7623 
+-----Saved submission file at: logs/submit_BoxOfLies/mult_vaf_BagOfLies_submit.zip
+test_epoch:1, ACC= 0.4158, AUC= 0.4935, EER= 0.4407
+
+epoch:2, mini-batch: 82, lr=0.000300, CE_global= 2.4593 , CE1= 2.4593 , CE2= 2.4593 
+test_epoch:2, ACC= 0.4059, AUC= 0.3971, EER= 0.5424
+
+epoch:3, mini-batch: 82, lr=0.000300, CE_global= 2.3863 , CE1= 2.3863 , CE2= 2.3863 
+-----Saved submission file at: logs/submit_BoxOfLies/mult_vaf_BagOfLies_submit.zip
+test_epoch:3, ACC= 0.5842, AUC= 0.5504, EER= 0.4576
+
+epoch:4, mini-batch: 82, lr=0.000300, CE_global= 2.4082 , CE1= 2.4082 , CE2= 2.4082 
+test_epoch:4, ACC= 0.5842, AUC= 0.4988, EER= 0.4746
+
+epoch:5, mini-batch: 82, lr=0.000300, CE_global= 2.2784 , CE1= 2.2784 , CE2= 2.2784 
+test_epoch:5, ACC= 0.5743, AUC= 0.5198, EER= 0.4746
+
+epoch:6, mini-batch: 82, lr=0.000300, CE_global= 2.2121 , CE1= 2.2121 , CE2= 2.2121 
+test_epoch:6, ACC= 0.4653, AUC= 0.5819, EER= 0.3898
+
+epoch:7, mini-batch: 82, lr=0.000300, CE_global= 1.9817 , CE1= 1.9817 , CE2= 1.9817 
+test_epoch:7, ACC= 0.5347, AUC= 0.4911, EER= 0.5593
+
+epoch:8, mini-batch: 82, lr=0.000300, CE_global= 2.0524 , CE1= 2.0524 , CE2= 2.0524 
+test_epoch:8, ACC= 0.5842, AUC= 0.4883, EER= 0.4915
+
+epoch:9, mini-batch: 82, lr=0.000300, CE_global= 1.8985 , CE1= 1.8985 , CE2= 1.8985 
+test_epoch:9, ACC= 0.5842, AUC= 0.4952, EER= 0.4915
+
+epoch:10, mini-batch: 82, lr=0.000300, CE_global= 1.7906 , CE1= 1.7906 , CE2= 1.7906 
+test_epoch:10, ACC= 0.5743, AUC= 0.4572, EER= 0.4237
+
+epoch:11, mini-batch: 82, lr=0.000300, CE_global= 1.7235 , CE1= 1.7235 , CE2= 1.7235 
+-----Saved submission file at: logs/submit_BoxOfLies/mult_vaf_BagOfLies_submit.zip
+test_epoch:11, ACC= 0.6238, AUC= 0.5517, EER= 0.4746
+
+epoch:12, mini-batch: 82, lr=0.000300, CE_global= 1.5798 , CE1= 1.5798 , CE2= 1.5798 
+test_epoch:12, ACC= 0.5743, AUC= 0.4798, EER= 0.4915
+
+epoch:13, mini-batch: 82, lr=0.000300, CE_global= 1.5282 , CE1= 1.5282 , CE2= 1.5282 
+test_epoch:13, ACC= 0.5842, AUC= 0.4528, EER= 0.5085
+
+epoch:14, mini-batch: 82, lr=0.000300, CE_global= 1.3929 , CE1= 1.3929 , CE2= 1.3929 
+-----Saved submission file at: logs/submit_BoxOfLies/mult_vaf_BagOfLies_submit.zip
+test_epoch:14, ACC= 0.6733, AUC= 0.5662, EER= 0.4576
+
+epoch:15, mini-batch: 82, lr=0.000300, CE_global= 1.3808 , CE1= 1.3808 , CE2= 1.3808 
+test_epoch:15, ACC= 0.5446, AUC= 0.4439, EER= 0.5763
+
+epoch:16, mini-batch: 82, lr=0.000300, CE_global= 1.3083 , CE1= 1.3083 , CE2= 1.3083 
+test_epoch:16, ACC= 0.5149, AUC= 0.4040, EER= 0.5424
+
+epoch:17, mini-batch: 82, lr=0.000300, CE_global= 1.2162 , CE1= 1.2162 , CE2= 1.2162 
+test_epoch:17, ACC= 0.4950, AUC= 0.3418, EER= 0.5593
+
+epoch:18, mini-batch: 82, lr=0.000300, CE_global= 1.2022 , CE1= 1.2022 , CE2= 1.2022 
+test_epoch:18, ACC= 0.4950, AUC= 0.3761, EER= 0.5763
+
+epoch:19, mini-batch: 82, lr=0.000300, CE_global= 1.2237 , CE1= 1.2237 , CE2= 1.2237 
+test_epoch:19, ACC= 0.5842, AUC= 0.4003, EER= 0.5932
+
+epoch:20, mini-batch: 82, lr=0.000150, CE_global= 1.1204 , CE1= 1.1204 , CE2= 1.1204 
+test_epoch:20, ACC= 0.5743, AUC= 0.3959, EER= 0.5932
+
+epoch:21, mini-batch: 82, lr=0.000150, CE_global= 1.0891 , CE1= 1.0891 , CE2= 1.0891 
+test_epoch:21, ACC= 0.5545, AUC= 0.3898, EER= 0.6102
+
+epoch:22, mini-batch: 82, lr=0.000150, CE_global= 1.0677 , CE1= 1.0677 , CE2= 1.0677 
+test_epoch:22, ACC= 0.5644, AUC= 0.3810, EER= 0.5932
+
+epoch:23, mini-batch: 82, lr=0.000150, CE_global= 1.0427 , CE1= 1.0427 , CE2= 1.0427 
+test_epoch:23, ACC= 0.5743, AUC= 0.3975, EER= 0.5763
+
+epoch:24, mini-batch: 82, lr=0.000150, CE_global= 1.0074 , CE1= 1.0074 , CE2= 1.0074 
+test_epoch:24, ACC= 0.5842, AUC= 0.4169, EER= 0.6271
+
+epoch:25, mini-batch: 82, lr=0.000150, CE_global= 1.0099 , CE1= 1.0099 , CE2= 1.0099 
+test_epoch:25, ACC= 0.5743, AUC= 0.3914, EER= 0.6102
+
+epoch:26, mini-batch: 82, lr=0.000150, CE_global= 0.9834 , CE1= 0.9834 , CE2= 0.9834 
+test_epoch:26, ACC= 0.5743, AUC= 0.4072, EER= 0.5593
+
+epoch:27, mini-batch: 82, lr=0.000150, CE_global= 0.9356 , CE1= 0.9356 , CE2= 0.9356 
+test_epoch:27, ACC= 0.5743, AUC= 0.4023, EER= 0.5593
+
+epoch:28, mini-batch: 82, lr=0.000150, CE_global= 0.9644 , CE1= 0.9644 , CE2= 0.9644 
+test_epoch:28, ACC= 0.5743, AUC= 0.4052, EER= 0.5763
+
+epoch:29, mini-batch: 82, lr=0.000150, CE_global= 0.9423 , CE1= 0.9423 , CE2= 0.9423 
+test_epoch:29, ACC= 0.5644, AUC= 0.3854, EER= 0.5932
+
+epoch:30, mini-batch: 82, lr=0.000150, CE_global= 0.8513 , CE1= 0.8513 , CE2= 0.8513 
+test_epoch:30, ACC= 0.5743, AUC= 0.4193, EER= 0.5254
+
+Best_epoch:14, Best ACC= 0.6733, Best AUC= 0.5662, Best EER= 0.4576

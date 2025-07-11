@@ -1,0 +1,65 @@
+Start Deception Detection:
+ Parameters settings:
+ Namespace(device=0, gpu=0, lr=0.0001, batchsize=32, step_size=5, gamma=0.5, echo_batches=1, max_epochs=15, log='logs2', finetune=True, train_dataset='All', train_root='', train_list=['../Deception_datasets/MMDD2025_features_unify/MMDD_stage2_features/DOLOS_train_l464_t365.pkl', '../Deception_datasets/MMDD2025_features_unify/MMDD_stage2_features/MDPE_train_balanced_l493_t492.pkl'], valid_dataset='BoxOfLies', valid_root='', valid_list='../Deception_datasets/MMDD2025_features_unify/BoxOfLies/BOL_test_features.pkl', test_dataset='MMDD2025_final', test_root='', test_list='../Deception_datasets/MMDD2025_features_unify/MMDD2025_final_test_features.pkl', testing=True, adaption=True, fusion=True, fusion_modal='FusionModule', modalities='vaf', v_dim=64, a_dim=512, f_dim=512, common_dim=128, kernel_size=3, fusion_type='mult', mult_layer=3, attn_dropout_mult=0.1, embed_dim=64, num_heads=8, layers=4, attn_dropout=0.1, relu_dropout=0.1, res_dropout=0.1, embed_dropout=0.0, attn_mask=True, channel=64, reduction=16)
+Train from scratch!
+epoch:1, mini-batch: 56, lr=0.000100, CE_global= 0.6933 , CE_vl= 0.6993 , CE_face= 0.6926 , CE_al= 0.7261, L_da= 0.0000 
+valid_epoch:1, ACC= 0.4257, AUC= 0.3692, EER= 0.5763
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_1mult_vaf_All_submit.zip
+
+epoch:2, mini-batch: 56, lr=0.000099, CE_global= 0.5513 , CE_vl= 0.6935 , CE_face= 0.6562 , CE_al= 0.4245, L_da= 0.0813 
+valid_epoch:2, ACC= 0.4257, AUC= 0.4689, EER= 0.5424
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_2mult_vaf_All_submit.zip
+
+epoch:3, mini-batch: 56, lr=0.000095, CE_global= 0.1945 , CE_vl= 0.6974 , CE_face= 0.5784 , CE_al= 0.1779, L_da= 0.1299 
+valid_epoch:3, ACC= 0.4455, AUC= 0.4471, EER= 0.5763
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_3mult_vaf_All_submit.zip
+
+epoch:4, mini-batch: 56, lr=0.000089, CE_global= 0.1130 , CE_vl= 0.6989 , CE_face= 0.4802 , CE_al= 0.1198, L_da= 0.1310 
+valid_epoch:4, ACC= 0.4158, AUC= 0.4903, EER= 0.5763
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_4mult_vaf_All_submit.zip
+
+epoch:5, mini-batch: 56, lr=0.000081, CE_global= 0.0575 , CE_vl= 0.6959 , CE_face= 0.3469 , CE_al= 0.0732, L_da= 0.1620 
+valid_epoch:5, ACC= 0.4257, AUC= 0.4782, EER= 0.5254
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_5mult_vaf_All_submit.zip
+
+epoch:6, mini-batch: 56, lr=0.000072, CE_global= 0.0311 , CE_vl= 0.7005 , CE_face= 0.2550 , CE_al= 0.0482, L_da= 0.1439 
+valid_epoch:6, ACC= 0.4158, AUC= 0.4798, EER= 0.5254
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_6mult_vaf_All_submit.zip
+
+epoch:7, mini-batch: 56, lr=0.000062, CE_global= 0.0084 , CE_vl= 0.6953 , CE_face= 0.1802 , CE_al= 0.0236, L_da= 0.1352 
+valid_epoch:7, ACC= 0.4059, AUC= 0.4366, EER= 0.5593
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_7mult_vaf_All_submit.zip
+
+epoch:8, mini-batch: 56, lr=0.000051, CE_global= 0.0081 , CE_vl= 0.6978 , CE_face= 0.0965 , CE_al= 0.0178, L_da= 0.1026 
+valid_epoch:8, ACC= 0.3960, AUC= 0.4298, EER= 0.5763
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_8mult_vaf_All_submit.zip
+
+epoch:9, mini-batch: 56, lr=0.000039, CE_global= 0.0144 , CE_vl= 0.7017 , CE_face= 0.0577 , CE_al= 0.0205, L_da= 0.0708 
+valid_epoch:9, ACC= 0.4059, AUC= 0.4334, EER= 0.5593
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_9mult_vaf_All_submit.zip
+
+epoch:10, mini-batch: 56, lr=0.000029, CE_global= 0.0046 , CE_vl= 0.6988 , CE_face= 0.0348 , CE_al= 0.0127, L_da= 0.0749 
+valid_epoch:10, ACC= 0.4158, AUC= 0.4596, EER= 0.5424
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_10mult_vaf_All_submit.zip
+
+epoch:11, mini-batch: 56, lr=0.000020, CE_global= 0.0014 , CE_vl= 0.6971 , CE_face= 0.0199 , CE_al= 0.0058, L_da= 0.0529 
+valid_epoch:11, ACC= 0.4059, AUC= 0.4278, EER= 0.5254
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_11mult_vaf_All_submit.zip
+
+epoch:12, mini-batch: 56, lr=0.000012, CE_global= 0.0030 , CE_vl= 0.6970 , CE_face= 0.0153 , CE_al= 0.0102, L_da= 0.0393 
+valid_epoch:12, ACC= 0.3960, AUC= 0.4153, EER= 0.5424
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_12mult_vaf_All_submit.zip
+
+epoch:13, mini-batch: 56, lr=0.000006, CE_global= 0.0014 , CE_vl= 0.6970 , CE_face= 0.0114 , CE_al= 0.0074, L_da= 0.0306 
+valid_epoch:13, ACC= 0.3960, AUC= 0.4346, EER= 0.5593
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_13mult_vaf_All_submit.zip
+
+epoch:14, mini-batch: 56, lr=0.000002, CE_global= 0.0009 , CE_vl= 0.6951 , CE_face= 0.0130 , CE_al= 0.0057, L_da= 0.0267 
+valid_epoch:14, ACC= 0.4059, AUC= 0.4463, EER= 0.5254
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_14mult_vaf_All_submit.zip
+
+epoch:15, mini-batch: 56, lr=0.000001, CE_global= 0.0019 , CE_vl= 0.6958 , CE_face= 0.0110 , CE_al= 0.0071, L_da= 0.0291 
+valid_epoch:15, ACC= 0.4059, AUC= 0.4282, EER= 0.5593
+-----Saved submission file at: logs2/submit_MMDD2025_final/epoch_15mult_vaf_All_submit.zip
+
+-----Compute Flops: 60.25 G, params: 33.59 M 
