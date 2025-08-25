@@ -1,5 +1,7 @@
 # Official Implementation of "Multi-source Multimodal Progressive Domain Adaption for Audio-Visual Deception Detection"
 
+[![arXiv](https://img.shields.io/badge/arXiv-2508.12842-red)](https://arxiv.org/abs/2508.12842)
+
 ### 🥉Top-2 Solution for the $1^{st}$ MultiModal Deception Detection (MMDD) Challenge at the $1^{st}$ Workshop on Subtle Visual Computing (SVC)
 
 Related Website: 
